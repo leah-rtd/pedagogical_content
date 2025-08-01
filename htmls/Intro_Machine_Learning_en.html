@@ -7688,16 +7688,53 @@ a.anchor-link {
 </li>
 </ul>
 <p>Example: Binary classification task: cat or dog ?<br/>
-Features <strong>before</strong> data preparation:
-|Fur_colour|Eye_colour|Height(cm)
-|------------|-------|------------|
-|brown|green|30
-|white|green|25</p>
-<p>Features <strong>after</strong> data preparation:
-|Fur_colour_brown|Fur_colour_white|eye_colour_green|Height(cm)
-|------------|-------|------------|-|
-|1|0|1|1
-|0|1|1|-1</p>
+Features <strong>before</strong> data preparation:</p>
+<table>
+<thead>
+<tr>
+<th>Fur_colour</th>
+<th>Eye_colour</th>
+<th>Height(cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brown</td>
+<td>green</td>
+<td>30</td>
+</tr>
+<tr>
+<td>white</td>
+<td>green</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+<p>Features <strong>after</strong> data preparation:</p>
+<table>
+<thead>
+<tr>
+<th>Fur_colour_brown</th>
+<th>Fur_colour_white</th>
+<th>eye_colour_green</th>
+<th>Height(cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
